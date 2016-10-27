@@ -89,4 +89,8 @@ public class Plane extends GameObject {
 
     public Plane() {
     }
+
+    public boolean isLive() {
+        return live;
+    }
 }
