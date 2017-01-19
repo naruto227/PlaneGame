@@ -40,10 +40,10 @@ public class PlaneGameFrame extends MyFrame {
                 if(explosion == null){  //第一次explosion为null，新建一个对象，后面不为空了，就不再建对象了
                     endTime = new Date();
                     explosion = new Explode(plane.x, plane.y);
+                    System.out.println("###############碰！！！");
                 }
                 explosion.draw(g);
 
-                System.out.println("###############碰！！！");
                 break;
             }
             if (!plane.isLive()) {
